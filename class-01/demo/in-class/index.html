@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab01</title>
+    <style>
+      h1 {
+        background-color: green;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Class 1, Lab</h1>
+      <p style="color: blue; background-color: aqua">
+        ¿Quién eres? (Apodo/pronombres)
+      </p>
+      <p style="color: rgb(251, 255, 15); background-color: brown">
+        ¿De qué industria vienes?
+      </p>
+      <p>¿Qué empresa de tecnología te gusta?</p>
+      <p>Un hecho divertido y/o geek</p>
+    </main>
+    <footer></footer>
+    <script>
+      // Recuerden que la funcion prompt siempre retorna un string
+      let apodo = prompt("¿Quién eres? (Apodo/pronombres)");
+      let industria = prompt("¿De qué industria vienes?");
+      let empresaTech = prompt("¿Qué empresa de tecnología te gusta?");
+      let hechoDivertido = prompt("Un hecho divertido y/o geek");
+      // El juntar el valor de varias variables en uno solo CONCATENAR
+      let mensaje =
+        apodo + " " + industria + " " + empresaTech + " " + hechoDivertido;
+      alert(mensaje);
+    </script>
+  </body>
+</html>
