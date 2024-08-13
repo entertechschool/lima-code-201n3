@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Para que el border de los elementos no afecte en mis estilos usamos */
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(24, 24, 27);
+  color: #fff;
+  display: flex;
+  /* permite manipular elementos en el eje x */
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 15px;
+}
+
+header > div > ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+a {
+  border: solid green;
+}
+
+main {
+  /* border: solid purple 5px; */
+  /* altura fija */
+  /* height: 90vh; */
+  /* alutra minima */
+  /* vh: view port height */
+  min-height: 85vh;
+}
+
+footer {
+  border: solid yellow;
+  height: 5vh;
+}
+
+ol {
+  border: solid;
+}
+
+section {
+  display: flex;
+  /* Para que flex respete el ancho de cada elemento debemos usar flex-wrap: wrap */
+  flex-wrap: wrap;
+  /* En flex por defecto usa flex-direction: row */
+  flex-direction: row-reverse;
+  /* flex-direction: column-reverse; */
+}
+
+section > div {
+  border: solid red;
+  width: 50%;
+  height: 200px;
+}

@@ -45,21 +45,47 @@
 
 ## Box Model
 
-1. ¿Qué es el Flex?
-2. ¿Caules son las propiedades de Flex?
-3. ¿Para que casos debemos usar Flex?
+¿Qué es el Flex?
+
+- Es una propiedad para poder acomodar listas, elementos, etc, poder centrarlos, darles espacios y una forma de ahorrar codigo en CSS
+- Un metodo que permite que los elementos se puedan distribuir a lo largo de un eje segun su contenedor
+- Su comportamiento por defecto, es desplazar los elementos en una linea (horizontal)
+
+¿Caules son las propiedades de Flex?
+
+```css
+.contenedor {
+  /* justify-content: Manipular la posición de un elemento de forma horizontal */
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  gap: 10px
+}
+```
+
+¿Para que casos debemos usar Flex?
+
+- Una cabecera (menu)
+- Separar elementos
+- los footer
+- distribuciones sin hacer calculos
+- ayuda la responsive
 
 ## Bucles
 
-1. ¿Qué es un bucle?
-2. ¿Cuántos tipos de bucles existen en `JavaScript`? (Solo menciona los que vimos en clases pasadas)
-3. Estructura de un bucle `for` en `JavaScript`
+¿Qué es un bucle?
+
+¿Cuántos tipos de bucles existen en `JavaScript`? (Solo menciona los que vimos en clases pasadas)
+Estructura de un bucle `for` en `JavaScript`
 
 ```js
 # Ejemplo
 ```
 
-4. Estructura de un bucle `while` en `JavaScript`
+Estructura de un bucle `while` en `JavaScript`
 
 ```js
 # Ejemplo
