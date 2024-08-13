@@ -78,11 +78,37 @@
 
 ¿Qué es un bucle?
 
+- Es una acción que se repite una cantidad n veces, pero basados en una condición
+- Puede usarse para definir una cantidad de intentos
+- Puede ser usado para refactorizar codigo
+- Para hacer un validador
+
 ¿Cuántos tipos de bucles existen en `JavaScript`? (Solo menciona los que vimos en clases pasadas)
+
+- `for`
+  - for clasico
+  - for of
+  - for in
+- `while`
+
 Estructura de un bucle `for` en `JavaScript`
 
 ```js
 # Ejemplo
+// variable
+// la condicion
+// el incremento
+const alumnos = ['Chester', 'Jordan', 'Martin']
+for (let i=0; i < alumnos.length; i++) {
+  for (let j=0; j < 12; j++) {
+    console.log('j',j)
+  }
+  if (i === 1) {
+    console.log('Hemos encontrado a Jordan')
+  } else {
+    console.log(alummnos[i])
+  }
+}
 ```
 
 Estructura de un bucle `while` en `JavaScript`
