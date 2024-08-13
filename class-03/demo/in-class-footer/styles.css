@@ -1,0 +1,31 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+header {
+  border: solid red;
+  height: 10vh;
+}
+
+a {
+  border: solid green;
+}
+
+main {
+  /* border: solid purple 5px; */
+  /* altura fija */
+  /* height: 90vh; */
+  /* alutra minima */
+  /* vh: view port height */
+  min-height: 85vh;
+}
+
+footer {
+  border: solid yellow;
+  height: 5vh;
+}
+
+ol {
+  border: solid;
+}
