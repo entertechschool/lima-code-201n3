@@ -9,11 +9,20 @@ const preguntas = [
   "En que empresa trabajo actualmente?",
   "A que edad empece a programar?",
   "Cual es mi marca de autos favorita",
+  "Cuales son mis salsas favoritas?",
 ];
 
-const respuestas = ["Pollo a la brasa", "VML", "12", "Aston Martin"];
+const respuestas = [
+  "Pollo a la brasa",
+  "VML",
+  "12",
+  "Aston Martin",
+  ["Ketchup", "Mayo", "Ají"],
+];
 let cantidadDePreguntasCorrectas = 0;
 let cantidadDePreguntasIncorrectas = 0;
+let cantidadDeIntentos = 0;
+const cantdadMaximaDeIntentos = 6;
 
 // cada pregunta debe ser mostrada en un prompt
 
@@ -22,12 +31,34 @@ let cantidadDePreguntasIncorrectas = 0;
 // console.log(nombre);
 
 for (let i = 0; i < preguntas.length; i++) {
-  const resputaDeUsuario = prompt(preguntas[i]); // pollo a la brasa
   // vamos a comparar la respuestas del usuario con la resputa que tengo guardada
-  if (respuestas[i].toLowerCase() === resputaDeUsuario.toLowerCase()) {
-    cantidadDePreguntasCorrectas++;
+  if (typeof respuestas[i] === "string") {
+    const respuestaDeUsuario = prompt(preguntas[i]); // pollo a la brasa
+    if (respuestas[i].toLowerCase() === respuestaDeUsuario.toLowerCase()) {
+      cantidadDePreguntasCorrectas++;
+    } else {
+      cantidadDePreguntasIncorrectas++;
+    }
   } else {
-    cantidadDePreguntasIncorrectas++;
+    while (cantidadDeIntentos <= cantdadMaximaDeIntentos) {
+      const respuestaBucle = prompt(preguntas[i]);
+      let seEncontroUnaRespuesta = false;
+      for (let j = 0; j < respuestas[i].length; j++) {
+        // respuestas[i][j]
+        if (respuestas[i][j].toLowerCase() === respuestaBucle.toLowerCase()) {
+          console.log("respuesta correcta", respuestas[i][j]);
+          seEncontroUnaRespuesta = true;
+          break;
+        }
+      }
+
+      if (seEncontroUnaRespuesta) {
+        alert("Se encontro la respuesta");
+        break;
+      } else {
+        cantidadDeIntentos++;
+      }
+    }
   }
 }
 

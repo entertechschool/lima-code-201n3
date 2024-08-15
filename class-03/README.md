@@ -1,4 +1,4 @@
-# Listas en HTML, Control de flujo en JS, y el Box Model de CSS 
+# Listas en HTML, Control de flujo en JS, y el Box Model de CSS
 
 ## Resumen
 
@@ -10,7 +10,7 @@ Esta clase es bastante conceptural. Vamos a profundizar en el **control de flujo
 - Demostración de código
   - Repaso acerca de los Array
   - Bucles (`for` y `while`)
-  - CSS: Box model 
+  - CSS: Box model
 - Vista previa del laboratorio y preparación
 
 ## Objetivos de aprendizaje
