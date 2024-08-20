@@ -64,9 +64,12 @@ llamar()
 
 Problema: Crear una funcion que reciba un arreglo de numeros y devuelva la suma de todos los numeros.
 
+[10, 4, 6, 8]
+10 + 4 + 6 + 8 = 28
+
 ## Flex y Grid
 
-- Flexbox
+### Flexbox
 
 ```css
 .container {
@@ -76,7 +79,7 @@ Problema: Crear una funcion que reciba un arreglo de numeros y devuelva la suma 
 }
 ```
 
-- Grid
+### Grid
 
 ```css
 .container {
