@@ -2,14 +2,14 @@
 
 ## Review del lab03
 
-| Nombre   | Estado |
-| -------- | ------ |
-| Walther  |        |
-| Martin   |        |
-| Michael  |        |
-| Jordan   |        |
-| Sheryl   |        |
-| Vladimir |        |
+| Nombre   | Estado                          |
+| -------- | ------------------------------- |
+| Walther  |                                 |
+| Martin   |                                 |
+| Michael  | Terminado (Faltan correcciones) |
+| Jordan   | Terminado                       |
+| Sheryl   |                                 |
+| Vladimir |                                 |
 
 ## DRY (Don't Repeat Yourself)
 
