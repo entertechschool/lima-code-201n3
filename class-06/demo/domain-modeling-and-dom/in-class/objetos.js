@@ -36,3 +36,25 @@ persona.esMayorDeEdad = {
 };
 
 console.log(persona);
+
+console.log("--------EJEMPLO2-------------");
+
+const carro = {
+  modelo: "GLE 450",
+  precio: 400000,
+  marca: "Mercedes",
+  mostrarCarro: function () {
+    return this.marca + " " + this.modelo;
+  },
+};
+
+const celular = {
+  marca: "apple",
+  modelo: "iPhone 15 pro",
+  precio: 4500,
+  agregarAlCarro: function () {
+    return this.marca + " " + this.precio;
+  },
+};
+
+console.log(celular.agregarAlCarro());

@@ -68,7 +68,7 @@ persona.nombre = "Luchito";
 
 ```
 
-## ¿Qué es el DOM?
+## ¿Qué es el DOM (Document Object Model)?
 
 -
 -
