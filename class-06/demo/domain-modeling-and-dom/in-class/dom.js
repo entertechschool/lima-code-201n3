@@ -46,11 +46,19 @@ direccionEscuela.textContent = tienda.direccion;
 escuelas.appendChild(direccionEscuela);
 
 const listaDocentes = document.createElement("ul"); // <ul></ul>
+console.log(listaDocentes);
 
 for (let i = 0; i < tienda.docentes.length; i++) {
   const listaElemento = document.createElement("li"); // <li></li>
-  listaElemento.textContent = tienda.docentes[i]; // <li>Linder</li>
-  listaDocentes.appendChild(listaElemento); // <ul><li>Linder</li> </ul>
+  listaElemento.textContent = tienda.docentes[i];
+  console.log(listaElemento);
+  listaDocentes.appendChild(listaElemento);
 }
 
 escuelas.appendChild(listaDocentes);
+
+//   listaElemento.textContent = tienda.docentes[i]; // <li>Linder</li>
+//   listaDocentes.appendChild(listaElemento); // <ul><li>Linder</li> </ul>
+// }
+
+// escuelas.appendChild(listaDocentes);
