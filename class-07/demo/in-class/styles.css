@@ -1,0 +1,10 @@
+#container {
+  border: solid blue;
+  min-height: 40vh;
+  padding: 10px;
+}
+
+#container > div {
+  border: solid green;
+  min-height: 100px;
+}
