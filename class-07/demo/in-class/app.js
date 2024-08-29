@@ -6,17 +6,17 @@ function SalmonCookiesSite(name, address, schedule, averageClientPerHour) {
 }
 
 function estimarVentas(numero) {
-  return numero * 5
+  return numero * 5;
 }
 
 // prototype
 SalmonCookiesSite.prototype.vender = function () {
-  console.log(estimarVentas(this.averageClientPerHour))
-}
+  console.log(estimarVentas(this.averageClientPerHour));
+};
 
 SalmonCookiesSite.prototype.saludar = function () {
-  console.log(this.name + " " + this.schedule)
-}
+  console.log(this.name + " " + this.schedule);
+};
 
 const lima = new SalmonCookiesSite(
   "Salmon Lima cookies",
@@ -25,18 +25,12 @@ const lima = new SalmonCookiesSite(
   100
 );
 
-console.log(lima.vender())
-
 const paris = new SalmonCookiesSite(
   "Salmon Paris cookies",
   "av Paris 1518",
   "8:00 am - 21:00 pm",
   200
 );
-
-console.log("Paris")
-paris.vender()
-console.log("-----------")
 
 const tokio = new SalmonCookiesSite(
   "Salmon Tokio cookies",
@@ -58,8 +52,6 @@ const santiago = new SalmonCookiesSite(
   "8:00 am - 21:00 pm",
   100
 );
-
-
 
 // azul
 const contenedor = document.getElementById("container");

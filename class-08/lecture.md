@@ -2,15 +2,15 @@
 
 ## Review de Lab07 (code)
 
-| Nombre   | Estado |
-| -------- | ------ |
-| Walther  |        |
-| Martin   |        |
-| Michael  |        |
-| Jordan   |        |
-| Sheryl   |        |
-| Johel    |        |
-| Vladimir |        |
+| Nombre   | Estado      |
+| -------- | ----------- |
+| Walther  | repaso      |
+| Martin   |             |
+| Michael  | repaso      |
+| Jordan   |             |
+| Sheryl   | en progreso |
+| Johel    |             |
+| Vladimir | repaso      |
 
 ## Wireframes
 
