@@ -2,6 +2,13 @@
 
 ## Revision de la clase anterior
 
+- Michael (terminado)
+- Walther lab A (terminado) - lab B (70%)
+- Vladimir (urgencia)
+- Johel (terminado)
+- Jordan lab A (terminado) - lab B (en progreso)
+- Martin (por temas laborales esta en el lab7)
+
 ## Estructura de un formulario en HTML
 
 ### Tipos de la etiqueta input:

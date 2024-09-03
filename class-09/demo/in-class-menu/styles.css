@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  background-color: #dcdcd9;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  background-color: black;
+  width: 200px;
+  height: 70px;
+}
+
+.items {
+  flex: 1;
+}
+
+.items > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
