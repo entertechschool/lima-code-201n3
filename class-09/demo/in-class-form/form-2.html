@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="titulo">Registro</h2>
+    <form action="" id="formulario">
+      <fieldset>
+        <legend>Datos del usuario</legend>
+        <div>
+          <label for="input-name">
+            Nombre completo
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Pepe"
+              id="input-name"
+            />
+          </label>
+        </div>
+        <div>
+          <label for="input-lastname">
+            Apellido completo
+            <input
+              type="text"
+              name="user_lastname"
+              placeholder="Perez"
+              id="input-lastname"
+            />
+          </label>
+        </div>
+        <div>
+          <button type="submit">Enviar datos</button>
+        </div>
+      </fieldset>
+    </form>
+    <div>
+      <h2>Nombre completo</h2>
+      <p id="user-data"></p>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
