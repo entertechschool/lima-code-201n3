@@ -42,6 +42,7 @@ function mostrarTiendas() {
     const title = document.createElement("h5");
     title.textContent = tiendas[i].name;
     const address = document.createElement("p");
+
     address.textContent = tiendas[i].address;
     const schedule = document.createElement("p");
     schedule.textContent = tiendas[i].schedule;
