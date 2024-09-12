@@ -2,6 +2,37 @@
 
 ## Review de Salmon Cookies
 
+- Michael:
+  - Chevere
+    - Manejo de eventos
+    - Manejo de objectos
+  - Problemas
+    - tablas desde js (abstracción)
+- Walther
+  - Chevere
+    - Ver el producto terminado
+  - Problemas
+    - CSS
+- Jordan
+  - Chevere
+    - Forms
+    - Mezclar HTML + CSS + JS
+  - Problemas
+    - Tablas desde JS
+    - Bucles
+    - funciones (en sintaxis)
+- Sheryl
+  - Chevere
+    - CSS
+  - Problemas
+    - Tablas - JS
+    - Continuidad de los labs
+- Johel
+  - Chevere
+    - CSS
+  - Problemas
+    - Tablas - JS
+
 ## Audio y Video
 
 ¿Cuál es la etiqueta HTML para incrustar audio en una página web?
