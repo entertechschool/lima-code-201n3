@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Video y Audio</h1>
+    <!-- si queremos que un video se reproduzca solo usamos el atributo autplay -->
+    <!-- Si queremos que el video al iniciar no tenga audio (muted) -->
+    <video
+      height="400"
+      controls
+      autoplay
+      muted
+      src="../audio-video/assets/video/demi.mov"
+    ></video>
+    <p>Audio</p>
+    <!-- al no tener controls el audio no es visible, pero si se puede escuchar -->
+    <audio autoplay muted src="../audio-video/assets/audio/levees.m4a"></audio>
+    <h2>Opciones multiples</h2>
+    <video controls muted>
+      <source src="../audio-video/assets/video/demi.mov" />
+      <source src="../audio-video/assets/video/demi.mp4" />
+      <source src="../audio-video/assets/video/demi.mpg" />
+    </video>
+  </body>
+</html>
