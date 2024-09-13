@@ -1,0 +1,9 @@
+.columnas{
+    width: 350px;
+}
+#imagenes{
+    display: flex;
+    justify-content: center;
+    grid-column: 3;
+    gap: 20px;
+}
