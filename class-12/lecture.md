@@ -2,9 +2,24 @@
 
 ## Review de **Odd Duck Products**
 
+- Aún no esta terminado mañana martes 17 sep van a revisarlo con Alex
+
+Michael: Entender las funciones que estaban dentro del objeto
+Vladimir: Va a volverlo a revisar para ordenarlo
+Johel: La solución fue muy extensa
+
 ## Canvas `<canvas></canvas>`
 
 ¿Qué es `<canvas></canvas>`?
+
+- Es un elemento que contiene graficos, creado por scripts, pueden ser
+  - cuadrados
+  - lineas
+  - imágenes
+  - texto
+  - colores
+- Es para hacer diseños
+- Es parecido a la etiquete img pero no tiene `src` ni `alt` y se puede crear figuras geometricas, es necesario un `id` para poder usarlo desde `JS`
 
 ```html
 <canvas id="myCanvas" width="500" height="500" style="border: solid"></canvas>

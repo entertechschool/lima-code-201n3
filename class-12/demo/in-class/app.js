@@ -1,3 +1,54 @@
+"use strict";
+
+const myCanvas = document.getElementById("my-canvas");
+// para poder dibujar en un canvas tenemos que definir que usaremos
+const context = myCanvas.getContext("2d");
+
+// este sirve para poder definir el color de mi dibujo
+context.fillStyle = "red";
+// context.fillRect(x, y, ancho. alto)
+// por defecto la unidad de medida son pixeles
+context.fillRect(160, 0, 180, 40);
+context.fillRect(120, 40, 300, 20);
+
+context.fillStyle = "#ffb473";
+context.fillRect(120, 60, 240, 40);
+context.fillRect(120, 100, 300, 40);
+context.fillRect(120, 140, 340, 30);
+context.fillRect(160, 170, 200, 60);
+
+context.fillStyle = "#a86428";
+context.fillRect(120, 60, 100, 40);
+context.fillRect(100, 100, 30, 80);
+context.fillRect(160, 100, 40, 80);
+context.fillRect(120, 160, 40, 20);
+
+// color de la linea
+context.strokeStyle = "#000";
+// el ancho de la linea
+context.lineWidth = 1;
+// queremos iniciar a dibujar una linea
+context.beginPath();
+// el punto de partida
+// que se va a empezar a dibujar en el eje x 1600 y el eje y 230
+context.moveTo(160, 230);
+// punto de llegada
+context.lineTo(100, 230);
+// dibujar la linea
+context.stroke();
+
+// iniciar una nueva linea
+context.beginPath();
+context.moveTo(100, 230);
+context.lineTo(100, 270);
+context.stroke();
+
+// iniciar una nueva linea
+context.beginPath();
+context.moveTo(100, 270);
+context.lineTo(60, 270);
+context.stroke();
+
 function drawGrid(context, canvasWidth, canvasHeight, cellSize) {
   context.strokeStyle = "#e0e0e0";
   context.lineWidth = 1;
