@@ -33,6 +33,15 @@ const context = myCanvas.getContext("2d");
 
 ¿Qué método de contexto se usa para dibujar un rectángulo relleno en un `<canvas>`?
 
+Usamos la funcion `fillRect` para poder crear una figura con relleno
+
+- Parametros que recibe la funcion `fillRect`
+
+`filRect(x, y, ancho, alto)`
+
+- Para poder asignare un color usamos la funcion `fillStyle`
+- El color puede ser en ingles, hexadecimal, hsl, rgb, rgba
+
 ```js
 context.fillStyle = "red";
 context.fillRect(x, y, ancho, alto);
@@ -42,6 +51,11 @@ context.fillRect(100, 200, 50, 50);
 ```
 
 ¿Qué método de contexto se usa para dibujar una línea en un `<canvas>`?
+
+- `beginPath()`: Sirve para inicar a dibujar una nueva linea
+- `moveTo(x, y)`: Sirve para definir el punto de inicio
+- `lineTo(x, y)`: Sirve para definir el punto de fin
+- `stroke()`: Dibuja la linea
 
 ```js
 context.beginPath();
@@ -69,6 +83,9 @@ context.stroke();
 ## ChartJS
 
 ¿Qué es ChartJS?
+
+- Es una libreria de JS (empaquetado de funciones), se pueda usar para crear gráficos (barras, puntos, areas, lineales, pies)
+-
 
 ¿Qué tipo de gráfico puedes crear con ChartJS? Nombra al menos tres.
 
