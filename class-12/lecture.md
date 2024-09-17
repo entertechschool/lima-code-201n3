@@ -85,15 +85,23 @@ context.stroke();
 ¿Qué es ChartJS?
 
 - Es una libreria de JS (empaquetado de funciones), se pueda usar para crear gráficos (barras, puntos, areas, lineales, pies)
--
 
 ¿Qué tipo de gráfico puedes crear con ChartJS? Nombra al menos tres.
 
--
--
--
+- doughnut
+- bar
+- pie
+- linear
 
 ¿Cómo se crea un nuevo gráfico de barras usando ChartJS en un `<canvas>`?
+
+```js
+new Chart(contexto, configuracion);
+```
+
+### Tarea
+
+- [Enlace de referencia](https://www.chartjs.org/docs/latest/developers/updates.html)
 
 ¿Cómo se actualiza un gráfico existente en ChartJS?
 
