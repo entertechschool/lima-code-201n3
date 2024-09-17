@@ -95,7 +95,31 @@ context.stroke();
 
 ¿Cómo se crea un nuevo gráfico de barras usando ChartJS en un `<canvas>`?
 
+- contexto: Es la referencia al `canvas` creando en el `HTML`
+- configuracion: Es el objeto que me permite definir los datos a mostrar el el grafico
+
 ```js
+const configuracion = {
+  // lo primero que debemos definir es el tipo de grafico
+  type: "bar",
+  // luego vamos a definir la data
+
+  data: {
+    // los label vienen a ser los textos que aparecen en el eje x
+    labels: ["Michael", "Vladimir", "Johel"],
+    datasets: [
+      {
+        label: "Cantidad de assistencias en Enero",
+        data: [108, 7, 6],
+      },
+      {
+        label: "Cantidad de assistencias en Febrero",
+        data: [18, 27, 36],
+      },
+    ],
+  },
+};
+
 new Chart(contexto, configuracion);
 ```
 
