@@ -1,0 +1,57 @@
+# Introducción a la Persistencia con Local Storage
+
+## Review del lab anterior
+
+## Preguntas
+
+¿Qué es `localStorage` y para qué sirve?
+
+¿Dónde y cómo se pueden ver los valores almacenados en `localStorage` en el navegador?
+
+- Lista de pasos:
+
+¿Qué función se usa para guardar un valor en `localStorage`?
+
+- Para poder guardar un valor en `localStorage` usaremos el siguiente codigo
+
+```javascript
+
+```
+
+¿Qué es `JSON.stringify` y `JSON.parse`?
+
+`JSON.stringify`:
+
+```js
+localStorage.setItem("numeros", JSON.stringify([1, 2, 3, 4, 5]));
+```
+
+`JSON.parse`:
+
+¿Cómo obtener un valor almacenado en `localStorage`?
+
+- Para poder obtener un valor de `localStorage` solo necesitamos saber su key, ejemplo:
+
+```js
+
+```
+
+### Nota:
+
+Si queremos acceder a un valor que no existe en `localStorage` este va a retonar
+
+```js
+// null
+```
+
+¿Cómo eliminar un valor de `localStorage`?
+
+```js
+
+```
+
+¿Cómo eliminar todos los valores almacenados en `localStorage`?
+
+```js
+
+```
