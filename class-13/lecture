@@ -2,20 +2,46 @@
 
 ## Review del lab anterior
 
+- Michel: Se entendio mucho mejor, el chart estuvo un poco complicado
+- Vladimir: Se entiendo mejor el concepte de objetos y funciones
+- Sheryl: Se cruzaron con los parciales de la U
+- Walther: Aún esta viendo la grabación del lab
+
 ## Preguntas
 
 ¿Qué es `localStorage` y para qué sirve?
+
+- Es una forma de almacenamiento para guardar los datos e información del usuario.
+- El almacenamiento que podemos tener en nuestra computadora
+- La información que se guarda es a nivel local (es nuestras computadoras)
 
 ¿Dónde y cómo se pueden ver los valores almacenados en `localStorage` en el navegador?
 
 - Lista de pasos:
 
+1. Ispeccionar (Clic derecho y usar la opción inspeccionar)
+2. Buscar el tab de Applicacion (aplicación)
+3. Buscar la opción que diga localStorage
+4. Al darle click al deplegable de localStorage va a mostrarnos la información del dominio actual (canvas.instructure.com)
+
 ¿Qué función se usa para guardar un valor en `localStorage`?
 
 - Para poder guardar un valor en `localStorage` usaremos el siguiente codigo
 
-```javascript
+- Nota Super IMPORTANTE: En `localStorage` solo podemos guardar `strings`
 
+```javascript
+localStorage.setItem("key", "value");
+localStorage.setItem("user_id", "walther_123");
+localStorage.setItem("nombre", "Linder Hassinger");
+
+const persona = {
+  name: "Pepe",
+  lastname: "Perez",
+  age: 22,
+};
+
+localStorage.setItem("obj_person", persona);
 ```
 
 ¿Qué es `JSON.stringify` y `JSON.parse`?
@@ -23,31 +49,36 @@
 `JSON.stringify`:
 
 ```js
+localStorage.setItem("obj_person", JSON.stringify(persona));
 localStorage.setItem("numeros", JSON.stringify([1, 2, 3, 4, 5]));
 ```
 
-`JSON.parse`:
+`JSON.parse`: Hacer lo opuesto a `JSON.stringify` y es capaz de revetir lo que hizo, sin importar el tipo de variable
 
 ¿Cómo obtener un valor almacenado en `localStorage`?
 
 - Para poder obtener un valor de `localStorage` solo necesitamos saber su key, ejemplo:
 
 ```js
-
+const datos = localStorage.getItem("obj_cantidad_click");
+// Convierte mi string a un objeto
+JSON.parse(datos);
 ```
 
 ### Nota:
 
-Si queremos acceder a un valor que no existe en `localStorage` este va a retonar
+Si queremos acceder a un valor que NO existe en `localStorage` este va a retonar
 
 ```js
-// null
+localStorage.getItem("no_existe") null
 ```
 
 ¿Cómo eliminar un valor de `localStorage`?
 
-```js
+Para poder eliminar un valor
 
+```js
+localStorage.removeItem("key");
 ```
 
 ¿Cómo eliminar todos los valores almacenados en `localStorage`?

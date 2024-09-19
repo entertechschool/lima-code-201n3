@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    img {
+      object-fit: cover;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <main>
+      <section>
+        <h1>Contador de clics en imágenes</h1>
+      </section>
+      <section>
+        <div>
+          <img
+            id="image-1"
+            width="200"
+            height="300"
+            src="https://i.blogs.es/94f9a8/infinity-war/840_560.jpeg"
+            alt=""
+          />
+          <p>Clics: <span id="contador-image-1">0</span></p>
+        </div>
+        <div>
+          <img
+            id="image-2"
+            width="200"
+            height="300"
+            src="https://media.revistagq.com/photos/6061b1bac19ff438270c5f19/4:3/w_2400,h_1800,c_limit/peliculas-marvel-2021.jpeg"
+            alt=""
+          />
+          <p>Clics: <span id="contador-image-2">0</span></p>
+        </div>
+        <div>
+          <img
+            id="image-3"
+            width="200"
+            height="300"
+            src="https://hips.hearstapps.com/hmg-prod/images/black-panther-1525787938.jpg"
+            alt=""
+          />
+          <p>Clics: <span id="contador-image-3">0</span></p>
+        </div>
+      </section>
+      <div>
+        <h2>Guardando en localStorage</h2>
+        <button id="save-localStorage">Guardar en localStorage</button>
+      </div>
+      <div>
+        <h2>Obteniendo la información de localStorage</h2>
+        <button id="get-localStorage">Obtener cantidades</button>
+      </div>
+      <div>
+        <h2>Eliminado un valor de localStorage</h2>
+        <button id="remove-localStorage">Eliminar datos de localStorage</button>
+      </div>
+      <div>
+        <h2>Eliminar todos los datos de localStorage</h2>
+        <button id="clear-localStorage">Eliminar todo</button>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
