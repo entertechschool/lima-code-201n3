@@ -48,7 +48,7 @@ img:hover {
   margin-top: 100px;
   margin-bottom: 100px;
   /* border-radius: 50%; */
-  animation: pulso 2s 5;
+  animation: pulso 2s infinite;
 }
 /* scale(1)    scale(1.5)      scale(1)*/
 /* 0% ---------50%-------------100% */
